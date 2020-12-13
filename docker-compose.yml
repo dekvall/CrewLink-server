@@ -1,0 +1,13 @@
+version: "3.6"
+services:
+  server:
+    build: .
+    image: ottomated/crewlink-server:build
+    container_name: crewlinkserver
+    expose:
+        - 9736
+    environment: 
+        # ADDRESS: Specify the server domain
+        # NAME: Specify the server name
+        # HTTPS: Enables https. You must place privkey.pem and fullchain.pem in your CWD.
+        # SSLPATH: Specifies an alternate path to SSL certificates.
