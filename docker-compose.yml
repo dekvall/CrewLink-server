@@ -4,6 +4,8 @@ services:
     build: .
     image: ottomated/crewlink-server:build
     container_name: crewlinkserver
+    ports:
+        - 9736:9736
     expose:
         - 9736
     environment: 
