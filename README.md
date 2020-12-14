@@ -85,6 +85,17 @@ cd crewlink-server
 docker build -t ottomated/crewlink-server:build .
 ```
 
+### Easier : Docker-compose
+
+A `docker-compose.yml` configuration file is provided in the repository. You can uncomment the environment variables you want to pass to the server.
+Run the command to start the server :
+
+```sh
+docker-compose up
+```
+It will automatically build the docker image.
+
+
 ## Manual Installation
 
 ### Prerequisites
