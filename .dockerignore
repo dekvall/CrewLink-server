@@ -1,0 +1,10 @@
+**
+**/.*
+
+!offsets
+!src
+!views
+
+!tsconfig.json
+!package.json
+!yarn.lock
