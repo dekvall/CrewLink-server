@@ -5,13 +5,13 @@ services:
     image: ottomated/crewlink-server:build
     container_name: crewlinkserver
     ports:
-        - 9736:9736
-        # - 443:443 # Uncomment this if you enable HTTPS
+        - "9736:9736"
+        # - "443:443" # Uncomment this if you enable HTTPS
     expose:
-        - 9736
-        # - 443 # Uncomment this if you enable HTTPS
+        - "9736"
+        # - "443" # Uncomment this if you enable HTTPS
     environment: 
-        # ADDRESS: Specify the server domain
-        # NAME: Specify the server name
-        # HTTPS: Enables https. You must place privkey.pem and fullchain.pem in your CWD.
-        # SSLPATH: Specifies an alternate path to SSL certificates.
+        # - "ADDRESS=" Specify the server domain
+        # - "NAME=" Specify the server name
+        # - "HTTPS" Enables https. You must place privkey.pem and fullchain.pem in your CWD.
+        # - "SSLPATH=" Specifies an alternate path to SSL certificates.
