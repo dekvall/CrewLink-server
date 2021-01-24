@@ -28,7 +28,6 @@ COPY views/ views/
 # It's a toss up on which order offsets and src
 # should be. Offsets are gauranteed to change
 # over time, but src has more changes in `git log`.
-COPY offsets/ offsets/
 COPY --from=build /app/dist/ dist
 EXPOSE 9736
 CMD ["node", "dist/index.js"]
